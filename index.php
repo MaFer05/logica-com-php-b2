@@ -5,6 +5,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $resultado = $_POST['numA'] + $_POST['numB'];
     } else if ($_POST['op'] == 'sub') {
         $resultado = $_POST['numA'] - $_POST['numB'];
+    } else if ($_POST['op'] == 'mult') {
+        $resultado = $_POST['numA'] * $_POST['numB'];
+    } else if ($_POST['op'] == 'div') {
+        $resultado = $_POST['numA'] / $_POST['numB'];
     }
 }
 ?>
